@@ -6,18 +6,20 @@ export default function($scope, todoFactory){
 		createHasInput : false
 	};
 
-	$scope.todos = [
-		{
-			task:'do dish',
-			isCompleted: false,
-			isEditing : false
-		},
-		{
-			task:'walk the dog',
-			isCompleted: true,
-			isEditing : false
-		}
-	];
+	// $scope.todos = [
+	// 	{
+	// 		task:'do dish',
+	// 		isCompleted: false,
+	// 		isEditing : false
+	// 	},
+	// 	{
+	// 		task:'walk the dog',
+	// 		isCompleted: true,
+	// 		isEditing : false
+	// 	}
+	// ];
+
+	todoFactory.getTasks($scope);
 
 	$scope.onCompletedClick = todo => {
 		todo.isCompleted = !todo.isCompleted;
@@ -49,7 +51,6 @@ export default function($scope, todoFactory){
 	// 	params.createHasInput = false;
 	// 	$scope.createTaskInput = '';
 	// };
-	
 
 	// $scope.deleteTask = todoToDelete => {
 	// 	_.remove($scope.todos, todo => todo.task === todoToDelete.task);
