@@ -14,8 +14,14 @@
 			text-decoration: line-through;
 		}
 	}
+
+	&__update-input{
+		margin: 0 auto;
+		width:  300px;
+	}
 }
 
 th, td{
 	font-size: 20px;
+	text-align: center;
 }
