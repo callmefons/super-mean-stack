@@ -4,18 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "NODE_PATH=$NODE_PATH:./src node server",
+    "dev": "npm start & webpack-dev-server --progress --color"
   },
   "keywords": [],
   "author": "Tittaya Mairittha <callmefons@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "angular": "^1.5.0",
+    "angular-ui-router": "^0.2.18",
     "express": "^4.13.4"
   },
   "devDependencies": {
     "babel-core": "^6.5.2",
     "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.5.0",
+    "raw-loader": "^0.5.1",
     "webpack": "^1.12.14",
     "webpack-dev-server": "^1.14.1"
   }

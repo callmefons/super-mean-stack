@@ -9,9 +9,10 @@ app.all('/*', function(req,res){
 		<html>\
 			<head>\
 				<title>MEAN Todo App</title>\
+				<base href="/">\
 			</head>\
 			<body>\
-				<h1>Hello, this is the app</h1>\
+				<div ui-view></div>\
 				<script src="bundle.js"></script>\
 			</body>\
 		</html>\

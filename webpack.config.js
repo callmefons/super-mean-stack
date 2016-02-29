@@ -26,6 +26,10 @@ module.exports = {
                 presets: ['es2015']
             }
         },
+        {
+            test: /\.html$/,
+            loader: 'raw'
+        }
         ]
     },
     plugins: [
